@@ -27,8 +27,20 @@ print "float(1) =", float(1)
 print " "
 
 # 1.5 int([x[, base]]) 将一个字符转换为int类型，base表示进制
+print "1.5 int([x[, base]]) : Convert a string or number to a integer, if possible."
+print "int(\"11\", 2)=", int("11", 2)
+print "int(\"11\", 3)=", int("11", 3)
+print "int(\"11\", 8)=", int("11", 8)
+print "int(5.20)=", int(5.20)
+print " "
+
 # 1.6 long([x[, base]]) 将一个字符转换为long类型
+print "1.6 int([x[, base]]) : Convert a string or number to a long, if possible."
+print long('1111111111111111111111111111111111111111', 16)
+print " "
+
 # 1.7 pow(x, y[, z]) 返回x的y次幂
+
 # 1.8 range([start], stop[, step]) 产生一个序列，默认从0开始
 # 1.9 round(x[, n]) 四舍五入
 # 1.10 sum(iterable[, start]) 对集合求和
