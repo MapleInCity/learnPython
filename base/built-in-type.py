@@ -19,16 +19,15 @@
 
 # print int(True)
 # 1
-# >>> int(False)
+# print int(False)
 # 0
-# >>> range(10)[True]
+# print range(10)[True]
+# 1
+# x = 5
+# print range(10)[x > 3]
 # 1
 
-# >>> x = 5
-# >>> range(10)[x > 3]
-# 1
-# int
-
+# int类型
 # 在 64 位平台上，int 类型是 64 位整数 (sys.maxint)，这显然能应对绝大多数情况。整数是虚拟机特殊照顾对象：
 
 # 从堆上按需申请名为 PyIntBlock 的缓存区域存储整数对象。
@@ -36,25 +35,21 @@
 # PyIntBlock 内存不会返还给操作系统，直至进程结束。
 # 看看 "小数字" 和 "大数字" 的区别：
 
-# >>> a = 15
-# >>> b = 15
-
-# >>> a is b
+# a = 15
+# b = 15
+# print a is b
 # True
+# print sys.getrefcount(a)
+# 9
 
-# >>> sys.getrefcount(a)
-# 47
-
-# >>> a = 257
-# >>> b = 257
-
-# >>> a is b
+# a = 257
+# b = 257
+# print a is b
 # False
+# print sys.getrefcount(a)
+# 5
 
-# >>> sys.getrefcount(a)
-# 2
 # 因 PyIntBlock 内存只复用不回收，同时持有大量整数对象将导致内存暴涨，且不会在这些对象被回收后释放内存，造成事实上的内存泄露。
-
 # 用 range 创建一个巨大的数字列表，这就需要足够多的 PyIntBlock 为数字对象提供存储空间。
 # 但换成 xrange 就不同了，每次迭代后，数字对象被回收，其占用内存空闲出来并被复用，内存也就不会暴涨了。
 

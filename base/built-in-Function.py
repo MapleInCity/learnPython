@@ -47,10 +47,14 @@
 
 # 1.8 range([start], stop[, step]) 产生一个序列，默认从0开始
 # print "1.8 range([start], stop[, step]) : "
-# print "range(10) =", range(10)
-# print "range(1, 10) =", range(1, 10)
-# print "range(1, 10, 2) =", range(1, 10, 2)
-# print " "
+# print range(10)
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# print range(1, 10)
+# [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# print range(1, 10, 2)
+# [1, 3, 5, 7, 9]
+# print range(1, 10, 2)[3]
+# 7
 
 # 1.9 round(x[, n]) 四舍五入
 # print "1.9 round(x[, n]) : round a number to given precision in decimal digits"
