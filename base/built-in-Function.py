@@ -40,9 +40,21 @@ print long('1111111111111111111111111111111111111111', 16)
 print " "
 
 # 1.7 pow(x, y[, z]) 返回x的y次幂
+print "1.7 pow(x, y[, z]) = (x ** y) % z"
+print "pow(2, 3)=", pow(2, 3)
+print "pow(2, 3, 3)=", pow(2, 3, 3)
+print " "
 
 # 1.8 range([start], stop[, step]) 产生一个序列，默认从0开始
+print "1.8 range([start], stop[, step]) : "
+print "range(10) =", range(10)
+print "range(1, 10) =", range(1, 10)
+print "range(1, 10, 2) =", range(1, 10, 2)
+print " "
+
 # 1.9 round(x[, n]) 四舍五入
+
+
 # 1.10 sum(iterable[, start]) 对集合求和
 # 1.11 oct(x) 将一个数字转化为8进制
 # 1.12 hex(x) 将整数x转换为16进制字符串
