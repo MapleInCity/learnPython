@@ -2,58 +2,61 @@
 
 # 一、数学运算类
 # 1.1 abs(number)绝对值
-print "1.1 abs(number) : Return the absolute value"
-print "abs(-1)=", abs(-1)
-print "abs(-0.1)=", abs(-0.1)
-print "abs(5+3j)=", abs(5+3j)
-print " "
+# print "1.1 abs(number) : Return the absolute value"
+# print "abs(-1)=", abs(-1)
+# print "abs(-0.1)=", abs(-0.1)
+# print "abs(5+3j)=", abs(5+3j)
+# print " "
 
 # 1.2 complex(real[, img])创建一个复数
-print "1.2 complex(real[, img]) : Create a complex number"
-print "complex(5, 3)=", complex(5, 3)
-print "complex(5, -3)=", complex(5, -3)
-print " "
+# print "1.2 complex(real[, img]) : Create a complex number"
+# print "complex(5, 3)=", complex(5, 3)
+# print "complex(5, -3)=", complex(5, -3)
+# print " "
 
 # 1.3 divmod(x, y)分别取商和余数
-print "1.3 divmod(x, y) : Return the tuple (x//y, x%y)."
-print "divmod(10, 3)->", divmod(10, 3)
-print "divmod(10.0, 3.4)->", divmod(10.0, 3.4)
-print " "
+# print "1.3 divmod(x, y) : Return the tuple (x//y, x%y)."
+# print "divmod(10, 3)->", divmod(10, 3)
+# print "divmod(10.0, 3.4)->", divmod(10.0, 3.4)
+# print " "
 
 # 1.4 float(x)将一个字符串或数转换为浮点数。如果无参数将返回0.0
-print "1.4 float(x) : Convert a string or number to a floating point number, if possible"
-print "float(\"1.2\") + 1.2 =", float("1.2") + 1.2
-print "float(1) =", float(1)
-print " "
+# print "1.4 float(x) : Convert a string or number to a floating point number, if possible"
+# print "float(\"1.2\") + 1.2 =", float("1.2") + 1.2
+# print "float(1) =", float(1)
+# print " "
 
 # 1.5 int([x[, base]]) 将一个字符转换为int类型，base表示进制
-print "1.5 int([x[, base]]) : Convert a string or number to a integer, if possible."
-print "int(\"11\", 2)=", int("11", 2)
-print "int(\"11\", 3)=", int("11", 3)
-print "int(\"11\", 8)=", int("11", 8)
-print "int(5.20)=", int(5.20)
-print " "
+# print "1.5 int([x[, base]]) : Convert a string or number to a integer, if possible."
+# print "int(\"11\", 2)=", int("11", 2)
+# print "int(\"11\", 3)=", int("11", 3)
+# print "int(\"11\", 8)=", int("11", 8)
+# print "int(5.20)=", int(5.20)
+# print " "
 
 # 1.6 long([x[, base]]) 将一个字符转换为long类型
-print "1.6 int([x[, base]]) : Convert a string or number to a long, if possible."
-print long('1111111111111111111111111111111111111111', 16)
-print " "
+# print "1.6 int([x[, base]]) : Convert a string or number to a long, if possible."
+# print long('1111111111111111111111111111111111111111', 16)
+# print " "
 
 # 1.7 pow(x, y[, z]) 返回x的y次幂
-print "1.7 pow(x, y[, z]) = (x ** y) % z"
-print "pow(2, 3)=", pow(2, 3)
-print "pow(2, 3, 3)=", pow(2, 3, 3)
-print " "
+# print "1.7 pow(x, y[, z]) = (x ** y) % z"
+# print "pow(2, 3)=", pow(2, 3)
+# print "pow(2, 3, 3)=", pow(2, 3, 3)
+# print " "
 
 # 1.8 range([start], stop[, step]) 产生一个序列，默认从0开始
-print "1.8 range([start], stop[, step]) : "
-print "range(10) =", range(10)
-print "range(1, 10) =", range(1, 10)
-print "range(1, 10, 2) =", range(1, 10, 2)
-print " "
+# print "1.8 range([start], stop[, step]) : "
+# print "range(10) =", range(10)
+# print "range(1, 10) =", range(1, 10)
+# print "range(1, 10, 2) =", range(1, 10, 2)
+# print " "
 
 # 1.9 round(x[, n]) 四舍五入
-
+# print "1.9 round(x[, n]) : round a number to given precision in decimal digits"
+# print "round(10.555, 1)=", round(10.555, 1)
+# print "round(10.555, 2)=", round(10.555, 2)
+# print " "
 
 # 1.10 sum(iterable[, start]) 对集合求和
 # 1.11 oct(x) 将一个数字转化为8进制
@@ -61,6 +64,7 @@ print " "
 # 1.13 chr(i) 返回整数i对应的ASCII字符
 # 1.14 bin(x) 将整数x转换为二进制字符串
 # 1.15 bool([x]) 将x转换为Boolean类型
+
 
 # 二、集合类操作
 # 2.1 basestring()	str和unicode的超类 不能直接调用，可以用作isinstance判断
@@ -152,4 +156,3 @@ print " "
 # 6.1 help()--帮助信息
 # 6.2 __import__()--没太看明白了，看到了那句“Direct use of __import__() is rare”之后就没心看下去了
 # 6.3 apply()、buffer()、coerce()、intern()---这些是过期的内置函数，故不说明
-
