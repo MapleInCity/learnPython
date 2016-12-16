@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# !/usr/bin/env python
 # coding:utf-8
 
 a = 19 + 2 * 4 - 8 / 2
